@@ -1,0 +1,128 @@
+.single-product {
+    margin-top: 120px;
+}
+
+.product-name {
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.single-product .price em{
+    text-decoration: line-through;
+    color: #c8c8c8;
+    font-size: 17px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.single-product .price {
+    font-size: 27px;
+    font-weight: 700;
+    color: #0071f8;
+}
+
+.product-description {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    font-size: 14px;
+}
+
+.single-product form {
+    display: flex;
+    gap: 20px;
+}
+
+.single-product form input {
+    width: 80px;
+    height: 50px;
+    background-color: #f7f7f7;
+    border: 1px solid #e7e7e7;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.single-product form button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* display: inline-block; */
+    height: 50px;
+    line-height: 50px;
+    background-color: #ee626b;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0px 25px;
+    border: none;
+    border-radius: 25px;
+    transition: all .3s;
+}
+
+.single-product ul {
+    margin-top: 60px;
+    list-style: none;
+}
+
+.single-product ul li {
+    display: block;
+    margin: 20px 0px;
+    font-size: 14px;
+    color: #0071f8;
+}
+
+.single-product ul li span {
+    width: 120px;
+    display: inline-block;
+    color: #aaa;
+}
+
+.single-product hr {
+    width: 100%;
+    height: 1px;
+    background-color: #bfbfbf;
+    margin: 80px 0px;
+}
+
+.tabs-content {
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    padding: 60px;
+    transition: all 0.3s;
+}
+
+.tabs-content .nav-tabs {
+    border-bottom: none;
+}
+
+.tabs-content ul.nav-tabs li:first-child {
+    border-right: 1px solid #d7d7d7;
+    margin-right: 30px;
+    padding-right: 30px;
+}
+
+.tabs-content .nav-link {
+    border: none;
+    border-radius: 0px;
+    background-color: transparent !important;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1e1e1e;
+    padding: 0px;
+}
+
+.tabs-content .nav-tabs .nav-link.active {
+    color: #0071f8;
+}
+
+.tabs-content .tab-content {
+    margin-top: 30px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #4a4a4a;
+}
