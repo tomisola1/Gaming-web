@@ -57,6 +57,12 @@ a {
     background: transparent;
 }
 
+.navv {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 .nav > .nav-item > a {
     color: #fff;
     font-weight: 200;
@@ -72,10 +78,17 @@ a {
     width: 9.8rem;
 }
 
-.navigation .nav .nav-item a.active, .navigation .nav .nav-item a:hover {
+.navigation .nav .nav-item a:hover {
     background-color: #ffffff1a;
     border-radius: 1.25rem;
     transition: all .3s;
+}
+
+.navigation .nav .nav-item a.active{
+    background-color: #ffffff1a;
+    border-radius: 1.25rem;
+    transition: all .3s;
+    padding: 0.5rem 1.25rem;
 }
 
 .signIn-btn {
@@ -377,6 +390,10 @@ a {
     margin-top: 120px;
 }
 
+.category {
+    width: 240px;
+}
+
 .top-categories .item {
     background-color: #0071f8;
     position: relative;
@@ -403,7 +420,7 @@ a {
 .section-heading em {
     color: #0071f8;
 }
-
+/* Cta Styles */
 .cta {
     margin-top: 120px;
     position: relative;
@@ -434,6 +451,10 @@ a {
     border-radius: 25px;
     padding: 14px 30px;
     line-height: 50px;
+}
+
+.cta .shop a:hover {
+    background-color: #0071f8;
 }
 
 .cta .subscribe {
@@ -496,7 +517,7 @@ a {
 .cta .subscribe form button:hover {
     background-color: #0071f8;
 }
-
+/* Footer Styles */
 footer {
     margin-top: 150px;
     background-color: #0071f8;
@@ -517,12 +538,11 @@ footer p {
 
 footer p a {
     color: #fff;
-    transition: all .3s;
     position: relative;
     z-index: 3;
+    transition: all .3s;
 }
 
 footer p a:hover {
-    opacity: 0.75;
-    /* color: #ee626b; */
+    opacity: 0.5;
 }
