@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 body {
-    /* position: relative; */
     font-family: 'Poppins', 'San Francisco';
     letter-spacing: 0.5px;
 }
@@ -55,12 +54,15 @@ a {
 
 .main-nav {
     background: transparent;
+    display: flex;
+    justify-content: space-between;
+    gap: 30%;
 }
 
 .navv {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .nav > .nav-item > a {
@@ -91,11 +93,56 @@ a {
     padding: 0.5rem 1.25rem;
 }
 
-.signIn-btn {
+.navigation .nav .nav-item .signIn-btn {
     background-color: #ee626b;
     font-weight: 500;
     border-radius: 1.25rem;
 }
+
+@media (max-width: 991px) {
+    .navv {
+        background-color: #fff;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0 0 25px 25px;
+        margin-top: 30px;
+        box-shadow: 0 0 0.6rem rgba(0,0,0,0.15);
+        gap: 0;
+        text-align: center;
+    }
+
+    .navv .nav-item {
+        border-bottom: 1px solid #d0d0d0;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .navv .nav-item:last-child{
+        border-bottom: none;
+    }
+
+    .navv li:first-child {
+        padding: 15px 0;
+    }
+
+    .navv .nav-item .nav-link {
+        color: #000;
+        font-weight: 400;
+        padding: 0;
+    }
+
+    .navigation .nav .nav-item a.active{
+        color: #ee626b;
+        font-weight: 400;
+        padding: 0;
+    }
+
+    .navigation .nav .nav-item .signIn-btn {
+        background-color: transparent;
+        border-bottom: none;
+        font-weight: normal;
+    }
+  }
 /* Header Styles */
 .banner {
     background-image: url("/assets/banner-bg.jpg");
@@ -165,7 +212,7 @@ a {
     border: none;
     border-radius: 25px;
     position: absolute;
-    left: 300px;
+    right: 0;
     top: 0;
     transition: all .3s;
 }
@@ -207,6 +254,33 @@ a {
     bottom: -25px;
     left: -25px;
 }
+
+@media (max-width: 1300px) {
+    .right-image {
+        width: 295px;
+        height: 360px;
+    }
+
+    .right-image img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .caption {
+        text-align: center;
+    }
+
+    .banner #search input {
+        max-width: 100%;
+    }
+
+    .right-image {
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+    }
+}
 /* Feature Styles */
 .features {
     margin-top: -80px;
@@ -238,6 +312,12 @@ a {
     font-size: 17px;
     margin-top: 25px;
     font-weight: 700;
+}
+
+@media (max-width: 992px){
+    .features .item {
+        margin-bottom: 30px;
+    }
 }
 /* Trending styles */
 
@@ -332,6 +412,12 @@ a {
 
 .trending .item:hover .down-content a {
     background-color: #0071f8;
+}
+
+@media (max-width: 992px){
+    .view-btn {
+        display: none;
+    }
 }
 /* Most played Styles */
 .most-played {
@@ -517,6 +603,22 @@ a {
 .cta .subscribe form button:hover {
     background-color: #0071f8;
 }
+
+@media (max-width: 992px){
+    .cta::after {
+        display: none;
+    }
+
+    .cta .shop {
+        padding: 30px;
+    }
+
+    .cta .subscribe {
+        margin-top: 30px;
+        padding: 30px;
+    }
+}
+
 /* Footer Styles */
 footer {
     margin-top: 150px;
